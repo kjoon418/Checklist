@@ -1,7 +1,7 @@
 # Checklist project
 
 ### Branches
-1. ** main **
+1. **main**
    프로젝트의 기본 버전을 담당할 브랜치
 
 ### Front
