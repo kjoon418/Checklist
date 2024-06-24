@@ -7,40 +7,52 @@
     <link href="login.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Serif+KR:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
-        <form autocomplete="false" action="">
-            <fieldset>
-                <legend>로그인</legend>
+        <div class="title">log in</div>
+        <form autocomplete="off" action="">
+            <section id="office">
                 <label>
                     <div>
                         아이디
                     </div>
-                    <input type="text">
+                    <input type="text" placeholder="office id">
                 </label>
                 <label>
                     <div>
                         비밀 번호
                     </div>
-                    <input type="text">
+                    <input type="password" placeholder="office password">
                 </label>
+            </section>
+            <section id="employee">
                 <label id="employee_id">
                     <div>
                         직원 번호
                     </div>
-                    <input type="password">
+                    <input type="password" placeholder="employee number">
                 </label>
+            </section>
                 <div class="btns">
-                    <input type="submit" value="login">
-                    <input type="reset" value="reset">
+                    <label>
+                        <input type="checkbox">
+                        <div>
+                            자동 로그인
+                        </div>
+                    </label>
+                    <button type="submit">
+                        로그인
+                    </button>
                 </div>
-            </fieldset>
             <div id="signUp">
-                <a href="#">
-                    <button>회원 가입</button>
-                </a>
+                <div class="comment">
+                    아직 지점을 등록하지 않으셨나요?
+                </div>
+                <div class="link">
+                    <a href="#">회원가입 하러 가기</a>
+                </div>
             </div>
         </form>
     </div>
